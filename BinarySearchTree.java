@@ -71,6 +71,43 @@ public class BinarySearchTree {
         }
     }
 
+    void delete(int data){
+        root=delete(root,data);
+    }
+
+
+    Node delete(Node root,int data){
+        if(root==null){
+            return null;
+        }
+        else if(root.data < data){
+            root.right= delete(root.right,data);
+        }
+        else if(root.data > data){
+            root.left=delete(root.left,data);
+        }
+        else{
+            if(root.left==null){
+                return root.right;
+            }
+            else if(root.right==null){
+                return root.left;
+            }
+            else{
+                root.data = min(root.right);
+                root.right=delete(root.right,root.data);
+            }
+        }
+        return root;
+    }
+
+    int min(Node root){
+        while(root.left!=null){
+            root=root.left;
+        }
+        return root.data;
+    }
+
     static void main(String[] args) {
         BinarySearchTree bst = new BinarySearchTree(5);
         bst.insert(bst.root,4);
@@ -89,5 +126,8 @@ public class BinarySearchTree {
         System.out.println();
 
         bst.search(bst.root,10);
+
+        bst.delete(5);
+        bst.inOrder(bst.root);
     }
 }
