@@ -1,3 +1,5 @@
+package src.data_structure_algorithm;
+
 public class BinarySearch {
 
     static public int search(int[] arr, int target,int start,int end){

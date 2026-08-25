@@ -1,3 +1,5 @@
+package recursion;
+
 public class SearchElements {
 
         public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package recursion;
+
 class Sort {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,6,5};

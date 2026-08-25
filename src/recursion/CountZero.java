@@ -1,3 +1,5 @@
+package recursion;
+
 public class CountZero {
 
     static int countZero(int n){

@@ -1,4 +1,4 @@
-
+package data_structure_algorithm;
 
 public class BinarySearchTree {
     Node root;
