@@ -1,4 +1,4 @@
-package data_structure_algorithm;
+package src.data_structure_algorithm;
 
 class Node{
     int data;
