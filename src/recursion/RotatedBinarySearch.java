@@ -1,4 +1,4 @@
-package src.data_structure_algorithm;
+package src.recursion;
 
 public class RotatedBinarySearch {
     static public int BinarySearch(int[] arr , int target, int s, int e){
