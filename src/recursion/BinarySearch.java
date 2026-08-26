@@ -1,4 +1,4 @@
-package src.data_structure_algorithm;
+package src.recursion;
 
 public class BinarySearch {
 

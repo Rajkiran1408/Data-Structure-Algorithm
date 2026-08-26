@@ -1,4 +1,4 @@
-package recursion;
+package src.recursion;
 
 class Sort {
     public static void main(String[] args) {

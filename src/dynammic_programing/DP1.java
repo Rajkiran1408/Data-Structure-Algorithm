@@ -1,6 +1,8 @@
-package dynammic_programing;
+package src.dynammic_programing;
 
 import java.util.Arrays;
+
+/// fibonacci using recursions
 
 public class DP1 {
     static int  count=0;
