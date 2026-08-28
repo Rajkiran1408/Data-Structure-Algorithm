@@ -2,7 +2,7 @@ package src.recursion;
 
 class Sort {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,6,5};
+        int[] arr = {7,6,4,3,2};
         System.out.println(sorted(arr,0));
     }
 
