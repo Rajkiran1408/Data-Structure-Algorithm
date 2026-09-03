@@ -55,6 +55,6 @@ public class NoOfPath {
     static void main(String[] args) {
         System.out.println(pathCount(3,3));
         path("",3,3);
-        System.out.println(pathRet("",3,3));
+        System.out.println(pathRet("",3,2));
     }
 }
