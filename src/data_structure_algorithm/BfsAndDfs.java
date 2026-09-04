@@ -49,11 +49,31 @@ class Graph1{
                 }
             }
         }
-        System.out.println(ans);
+        System.out.println("BFS : "+ans);
+    }
+
+    public void callDFS(int v){
+        int s = adjList.size();
+        boolean[] visited = new boolean[s];
+        ArrayList<Integer> ans = new ArrayList<>();
+        dfs(v,visited,ans);
+        System.out.println("DFS : "+ans);
+    }
+
+    public void dfs(int v,boolean[] visited,ArrayList<Integer> ans){
+
+        visited[v]=true;
+        ans.add(v);
+        for(int i=0;i<adjList.get(v).size();i++){
+            int av = adjList.get(v).get(i);
+            if(!visited[av]){
+                dfs(av,visited,ans);
+            }
+        }
     }
 }
 
-public class Bfs {
+public class BfsAndDfs {
     static void main(String[] args) {
         Graph1 g = new Graph1(5);
 
@@ -68,6 +88,7 @@ public class Bfs {
         g.print();
 
         g.callBFS(0);
+        g.callDFS(0);
     }
 
 
